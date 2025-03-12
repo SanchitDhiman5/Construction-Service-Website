@@ -98,10 +98,10 @@ img {
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
-/* .container {
+.container {
   max-width: 1120px;
   margin-inline: 1.5rem;
-} */
+}
 
 /* .grid {
   display: grid;
@@ -135,9 +135,68 @@ img {
 } */
 
 /*=============== HEADER & NAV ===============*/
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--black-color);
+  z-index: var(--z-fixed);
+}
 
-/* Navigation for mobile devices */
+.nav {
+  position: relative;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.nav__logo {
+  display: flex;
+  align-items: center;
+  column-gap: 0.25rem;
+}
+
+.nav__logo i {
+  color: var(--first-color);
+  font-size: 1.5rem;
+}
+.nav__logo span {
+  color: var(--white-color);
+  font-weight: var(--font-semi-bold);
+  transition: color 0.4s;
+}
+
+.nav__close,
+.nav__toggle {
+  font-size: 1.5rem;
+  color: var(--white-color);
+  cursor: pointer;
+  transition: color 0.4s;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4rem;
+}
+
+.nav__link {
+  color: var(--text-color-light);
+  font-weight: var(--font-semi-bold);
+  transition: color 0.4s;
+}
+
+.nav__link:hover {
+  color: var(--first-color);
+}
+
+.nav__close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+}
 /* Show menu */
 
 /* Change background header */
@@ -147,7 +206,18 @@ img {
 /*=============== HOME ===============*/
 
 /*=============== BUTTON ===============*/
-
+.button {
+  display: inline-flex;
+  background: var(--first-gradient);
+  color: var(--white-color);
+  font-weight: var(--font-semi-bold);
+  padding: 1rem 2rem;
+  transition: box-shadow 0.4s;
+}
+.button:hover {
+  box-shadow: 0 8px 32px hsla(18, 95%, 55%, 0.3);
+  color: var(--white-color);
+}
 /*=============== ABOUT ===============*/
 
 /*=============== SERVICES ===============*/
