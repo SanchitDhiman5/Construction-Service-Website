@@ -200,20 +200,20 @@ img {
   top: 1rem;
   right: 1.5rem;
 }
-/* Show menu */
+/* ----------------Show menu --------------------*/
 .nav__menu.show-menu {
   right: 0;
 }
-/* Change background header */
+/* ----------------------Change background header----------------------- */
 .bg-header {
   background-color: var(--body-color);
   box-shadow: 0 4px 16px hsla(255, 90%, 8%, 0.1);
 }
-.bg-header .logo span,
+.bg-header .nav__logo span,
 .bg-header .nav__toggle {
   color: var(--title-color);
 }
-/* Active link */
+/*------------------ Active link-------------------- */
 
 /*=============== HOME ===============*/
 .home {

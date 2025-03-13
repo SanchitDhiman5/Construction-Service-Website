@@ -24,3 +24,13 @@ navClose.addEventListener("click", removeShowMenu);
 navLinks.forEach((link) => {
   link.addEventListener("click", removeShowMenu);
 });
+
+/* =================== CHANGE BACKGROUND HEADER ================= */
+const bgHeader = function () {
+  const header = document.querySelector("#header");
+
+  // Add a class if the bottom offset is greater than 50 of the viewport
+  header.classList.toggle("bg-header", this.scrollY >= 50);
+};
+
+window.addEventListener("scroll", bgHeader);
