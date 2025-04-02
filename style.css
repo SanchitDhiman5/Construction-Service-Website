@@ -357,6 +357,24 @@ img {
   font-size: 1.25rem;
   color: var(--first-color);
 }
+
+.about__images {
+  position: relative;
+  justify-self: center;
+}
+
+.about__img-1 {
+  width: 200px;
+  border: 5px solid var(--body-color);
+  position: absolute;
+  top: -5rem;
+  left: 6rem;
+}
+
+.about__img-2 {
+  width: 250px;
+  margin-right: 2.5rem;
+}
 /*=============== SERVICES ===============*/
 
 /* Swiper class */

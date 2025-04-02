@@ -14,12 +14,6 @@ const removeShowMenu = function () {
   navMenu.classList.remove("show-menu");
 };
 
-// Open nav-bar-menu:
-navToggle.addEventListener("click", addShowMenu);
-
-// Close nav-bar-menu:
-navClose.addEventListener("click", removeShowMenu);
-
 // Closing nav-bar-menu after clicking on the nav-links:
 navLinks.forEach((link) => {
   link.addEventListener("click", removeShowMenu);
@@ -34,3 +28,8 @@ const bgHeader = function () {
 };
 
 window.addEventListener("scroll", bgHeader);
+// Open nav-bar-menu:
+navToggle.addEventListener("click", addShowMenu);
+
+// Close nav-bar-menu:
+navClose.addEventListener("click", removeShowMenu);
